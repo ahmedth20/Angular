@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ListCategoriesComponent } from './list-categories/list-categories.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ListCategoriesComponent } from './list-categories/list-categories.compo
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    ListCategoriesComponent
+    ListCategoriesComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
