@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ListCategoriesComponent } from './list-categories/list-categories.component';
 import { FilterPipe } from './filter.pipe';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { ProductModule } from './features/product/product.module';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { FilterPipe } from './filter.pipe';
     FooterComponent,
     HomeComponent,
     ListCategoriesComponent,
-    FilterPipe
+    FilterPipe,
+    NotfoundComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
