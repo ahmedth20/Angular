@@ -1,17 +1,18 @@
-<!--<div class="container">
-    <div class="row">
-
-    <ng-container *ngFor="let p of listproduct"> 
-    <div  class="col-md-4" style="margin-bottom: 30px;">
-       <!-- *ngIf="title.toLowerCase == c.title.toLowerCase || title ==''" -->
-      <!--   <img [src]="c.image" [alt]="c.title" class="img-fluid h-50 w-75" (click)="afficheDescription(c.id)">
-         <h3>{{c.title | uppercase}}</h3>
-         <button class="btn btn-primary" *ngIf="c.available" [routerLink]="['/produits/',c.id]">Voir produits</button>
-         <!-- <button class="btn btn-primary" [hidden]="c.available == false">Voir produits</button> -->
-      <!--   <p *ngIf="c.available == false"> Categorie non disponible </p>
-       
+<div class="container">
+   <div class="row">
+     <div class="col-md-4" style="margin-bottom: 20px;" *ngFor="let product of listProducts">
+       <img [src]="product.image" [alt]="product.name" class="img-fluid h-50 w-75">
+       <h3>{{product.name}}</h3>
+       <h3>{{product.price}}</h3>
+       <div class="row">
+         <button type="button" class="btn btn-outline-primary" (click)="increment(product)">Like</button>
+       </div>
+       <div class="col-6">
+         <button *ngIf="product.quantity== 0;else elseBlock" type="button" class="btn btn-outline-secondary" (click)="buy(product)" disabled>Buy</button>
+      <ng-template #elseBlock>
+         <button type="button"  class="btn btn-outline-secondary" (click)="buy(product)">Buy</button>
+      </ng-template> 
+      </div>
      </div>
-    </ng-container>
-   
-
-  </div>  -->
+     </div>
+    </div>

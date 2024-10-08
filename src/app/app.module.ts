@@ -14,6 +14,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { ProductModule } from './features/product/product.module';
 import { HighlightDirective } from './highlight.directive';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,13 +25,13 @@ import { HighlightDirective } from './highlight.directive';
     ListCategoriesComponent,
     FilterPipe,
     NotfoundComponent,
-    HighlightDirective
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    ProductModule
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

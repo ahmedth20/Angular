@@ -25,6 +25,7 @@ export class ListCategoriesComponent {
     "available":true},
     {"id":6,"title":"Produits voiture", "image":"assets/images/produits_nettoyages.jpg",
     "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.","available":false},]
+    
 afficheDescription(id:number){
   this.categories.forEach(element => {
     if (element.id == id) {
