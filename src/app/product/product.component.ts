@@ -18,7 +18,8 @@ export class ProductComponent {
     {"id":5, "name":"Hachoir", "image":"assets/images/hachoir.jpg","categoryId":2, "description":"","price":120,"brand":"Moulinex", "promotion":0,"nb_likes":0,"quantity":10},
     {"id":6, "name":"TV 50'' LG","image":"assets/images/tv_lg.jpg","categoryId":5, "description":"", "price":1800,"brand":"LG","promotion":0,"nb_likes":0,"quantity":10},
   ]
-  
+search:string="";
+
 constructor(private activated:ActivatedRoute) {
   
 this.id = this.activated.snapshot.params['id'];

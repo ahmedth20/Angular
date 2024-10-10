@@ -8,7 +8,9 @@ import { ProductComponent } from './product/product.component';
 const routes: Routes = [
   { path:"home",component:HomeComponent},
  { path:"", redirectTo: '/home' , pathMatch:'full'},
-  { path:"products/:id" , component: ProductComponent},
+
+  { path:"produits/:id" , component: ProductComponent},
+  
   { path:'products', loadChildren: () => 
     import ('./features/product/product.module')
     .then((m) => m.ProductModule)

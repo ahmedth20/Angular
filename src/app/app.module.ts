@@ -26,6 +26,7 @@ import { HighlightDirective } from './highlight.directive';
     FilterPipe,
     NotfoundComponent,
     HighlightDirective,
+    
   ],
   imports: [
     BrowserModule,
