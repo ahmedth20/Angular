@@ -13,6 +13,7 @@ import { FilterPipe } from './filter.pipe';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ProductModule } from './features/product/product.module';
 import { HighlightDirective } from './highlight.directive';
+import { FormCategorieComponent } from './form-categorie/form-categorie.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { HighlightDirective } from './highlight.directive';
     FilterPipe,
     NotfoundComponent,
     HighlightDirective,
+    FormCategorieComponent,
     
   ],
   imports: [

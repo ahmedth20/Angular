@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Categorie } from '../models/categorie';
 import { elementAt } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-categories',
@@ -33,4 +34,9 @@ afficheDescription(id:number){
     }
   })
 }
+constructor(private router: Router) { }
+update(c:Categorie){
+  console.log(JSON.stringify(c))
+  this.router.navigate(['/category/update', JSON.stringify(c)]); 
+  }
 }

@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { NotFoundError } from 'rxjs';
 import { ProductComponent } from './product/product.component';
+import { FormCategorieComponent } from './form-categorie/form-categorie.component';
 
 const routes: Routes = [
   { path:"home",component:HomeComponent},
@@ -27,6 +28,10 @@ const routes: Routes = [
     import ('./features/profile/profile.module')
     .then((m) => m.ProfileModule)
   },
+  {path:"category/add",component:FormCategorieComponent},
+
+  {path:"category/update/:obj",component:FormCategorieComponent},
+  
   { path:"**", component: NotfoundComponent }
   
 ];
